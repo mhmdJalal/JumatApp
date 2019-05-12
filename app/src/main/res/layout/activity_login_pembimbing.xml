@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.nguliktime.japps.LoginPembimbing">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lila1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/colorBlack"
+            android:textSize="30sp"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/Japps" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back,"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:textSize="27sp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/back"
+            android:layout_below="@id/Japps" />
+
+        <TextView
+            android:id="@+id/subTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/back"
+            android:text="Pembimbing"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:layout_below="@id/lila1"
+        android:id="@+id/linearLayout">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorBlack1">
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:drawablePadding="8dp"
+                android:hint="Username"
+                android:inputType="textPersonName"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="2dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorBlack1"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPassword"
+                android:inputType="textPassword"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:hint="Password"
+                android:drawablePadding="8dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/bPembimbing"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heihgt_button"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:text="MASUK"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btn_radius"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heihgt_button"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:text="KEMBALI"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btn_radius"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

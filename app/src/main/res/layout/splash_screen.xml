@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.nguliktime.japps.SplashScreen">
+
+    <ImageView
+        android:id="@+id/mosque"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/mosque"
+        android:layout_centerInParent="true"/>
+
+    <com.eyalbira.loadingdots.LoadingDots
+        android:layout_below="@id/mosque"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:LoadingDots_auto_play="true"
+
+        app:LoadingDots_dots_color="@android:color/holo_blue_light"
+        app:LoadingDots_dots_count="5"
+        app:LoadingDots_dots_size="8dp"
+        app:LoadingDots_dots_space="5dp"
+
+        app:LoadingDots_loop_duration="800"
+        app:LoadingDots_loop_start_delay="100"
+
+        app:LoadingDots_jump_duration="300"
+        app:LoadingDots_jump_height="8dp"/>
+
+</RelativeLayout>

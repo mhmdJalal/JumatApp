@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.nguliktime.japps.DetailAbsen">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TableLayout
+        android:layout_below="@id/appBar"
+        android:id="@+id/tlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen_16dp">
+
+        <TableRow>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="NIS"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": 11605617"
+                android:textSize="15dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/tvNis"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Nama"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": Muhamad Jalaludin"
+                android:textSize="15dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/tvNama"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Rombel"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": RPL XII-4"
+                android:textSize="15dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/tvRombel"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Rayon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=": Wikrama 1"
+                android:textSize="15dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/tvRayon"
+                />
+        </TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keterangan"
+                android:textSize="15dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioGroup
+                    android:layout_below="@id/tvRayon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rgAbsen">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hadir"
+                        android:id="@+id/rbHadir"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tanpa Keterangan"
+                        android:id="@+id/rbTidakHadir"/>
+                </RadioGroup>
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Mesjid"
+            android:textSize="15dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:layout_below="@id/tvRayon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rgMesjid">
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mesjid Nurul Amin"
+                    android:hint="M001"
+                    android:id="@+id/rbMesjid1"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mesjid Nurul Iman"
+                    android:hint="M002"
+                    android:id="@+id/rbMesjid2" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mesjid Mujahidin"
+                    android:hint="M003"
+                    android:id="@+id/rbMesjid3" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Simpan"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btn_radius"/>
+
+    </LinearLayout>
+</RelativeLayout>

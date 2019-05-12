@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.nguliktime.japps.MainActivity"
+    android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/about"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_info"
+            android:layout_margin="20dp"
+            android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/japps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_marginTop="130dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        android:layout_marginStart="30dp" />
+
+    <TextView
+        android:id="@+id/subTitle"
+        android:layout_below="@id/japps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Absensi shalat juma't menjadi lebih efektif"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/logas"
+        android:layout_below="@id/subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:text="LOGIN AS"
+        android:textColor="@color/colorBlack"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnPendamping"
+        android:layout_below="@id/logas"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heihgt_button"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_radius"
+        android:textColor="@color/colorWhite"
+        android:text="Pendamping"/>
+
+    <Button
+        android:id="@+id/btnPembimbing"
+        android:layout_below="@id/btnPendamping"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heihgt_button"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_radius"
+        android:textColor="@color/colorWhite"
+        android:text="Pembimbing Rayon" />
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.nguliktime.japps.DetailAbsen">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_below="@id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvTanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="06-08-2001"
+            android:textSize="18dp"
+            android:paddingLeft="20dp"
+            android:gravity="right"
+            />
+
+        <TableLayout
+            android:layout_below="@id/appBar"
+            android:id="@+id/tlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dimen_16dp">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="NIS"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=": 11605617"
+                    android:textSize="15dp"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/tvNis"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=": Muhamad Jalaludin"
+                    android:textSize="15dp"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/tvNama"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rombel"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=": RPL XII-4"
+                    android:textSize="15dp"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/tvRombel"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rayon"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=": Wikrama 1"
+                    android:textSize="15dp"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/tvRayon" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mesjid"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=": Nurul Amin"
+                    android:paddingBottom="10dp"
+                    android:textSize="15dp"
+                    android:id="@+id/tvMesjid" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Keterangan"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=": Hadir"
+                    android:paddingBottom="10dp"
+                    android:textSize="15dp"
+                    android:id="@+id/tvStatus" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
